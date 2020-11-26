@@ -1,0 +1,24 @@
+@mixin sectionIndent{
+  padding:120px 0 ;
+  @include _979{
+    padding:60px 0 ;
+  }
+}
+
+@mixin placeholder{
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}
+}
+
+@mixin flexCenterVertical{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flexBetweenCenter{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

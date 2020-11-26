@@ -1,0 +1,88 @@
+@import "vars";
+@import "mixin";
+@import "vendor/reset";
+@import "fonts";
+@import "media_mixin";
+body {
+    background-color: #E5E5E5;
+    font-size: 18px;
+    color: $dark;
+    font-family: $main_font;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+button:hover{
+    cursor: pointer;
+}
+.wrapper{
+    position: relative;
+    width: 100%;
+}
+.h2_title{
+    font-size: 20px;
+    font-family: inherit;
+    position: relative;
+    padding: 0 224px 0 0;
+    display: inline;
+    margin: 0 0 80px;
+    text-transform: uppercase;
+    &:before{
+        content: "";
+        width: 200px;
+        height: 1px;
+        background: #8D9AA5;
+        position: absolute;
+        top: 50%;
+        right: 0;
+    }
+    @include _600{
+        padding: 0 0 10px;
+        display: block;
+        text-align: center;
+        margin: 0;
+        &:before{
+            top: 35px;
+            right: 50%;
+            margin: 0 -100px 0 0;
+        }
+    }
+    &.center_box{
+        padding: 0 224px;
+        &:after{
+            content: "";
+            width: 200px;
+            height: 1px;
+            background: #8D9AA5;
+            position: absolute;
+            top: 50%;
+            left: 0;
+        }
+        @include _600{
+            padding: 0 0 10px;
+            display: block;
+            text-align: center;
+            margin: 0;
+            &:before{
+                top: 35px;
+                right: 50%;
+                margin: 0 -100px 0 0;
+            }
+            &:after{
+                display: none;
+            }
+        }
+    }
+}
+@import "blocks/header";
+@import "blocks/main";
+@import "blocks/footer";
+@import "blocks/container";
+@import "blocks/navigation";
+@import "blocks/button";
+@import "blocks/mainSlider";
+@import "vendor/slick";
+

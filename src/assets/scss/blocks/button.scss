@@ -1,0 +1,42 @@
+.btn{
+  font-family: $main_font;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $btnColor;
+  &:hover{
+    transition: all ease 0.45s;
+  }
+  &.btn_start_shop{
+    border: 1px solid #AA182C;
+    padding: 13px 35px;
+    color: $dark;
+    &:hover{
+      background: $hover_color;
+      color: #fff;
+    }
+  }
+  &.btn_grey{
+    border: 1px solid $white;
+    background: #6A737A;
+    color: $white;
+    &:hover{
+      background: $btnBg;
+      color: #fff;
+      border: 1px solid $btnBg;
+    }
+  }
+  &.border_solid_blue{
+    border: 1px solid $btnBorderColor;
+    padding: 20px 45px 15px;
+    &:hover{
+      background: $btnBg;
+      color: #fff;
+      border: 1px solid $btnBg;
+    }
+  }
+  &.full_bg{
+    background: $btnBg;
+    color: $white;
+  }
+}

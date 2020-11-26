@@ -1,0 +1,193 @@
+.home_page_header_slider{
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      top: 10px;
+      left: 0;
+      right: 0;
+      background: #CFDAE3;
+      z-index: 10;
+    }
+    .slider_bg {
+      position: relative;
+      height: 913px;
+      background-size: cover;
+      @include _1220 {
+        height: 100%;
+      }
+      &:after{
+        content: "";
+        background: rgba(64, 71, 78, 0.45);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+    }
+    .holder_slider_description {
+      display: flex;
+      padding: 350px 0 75px;
+      position: relative;
+      z-index: 1;
+      @include _1220 {
+        padding: 15% 0 10%;
+      }
+      .text {
+        display: flex;
+        justify-content: flex-start;
+        color: $white;
+        flex-direction: column;
+        width: 50%;
+        padding: 60px 0 0 0;
+        .title_slider {
+          font-family: inherit;
+          font-size: 86px;
+          padding: 0 0 25px;
+          @include _1220 {
+            font-size: 60px;
+          }
+          @include _600 {
+            font-size: 30px;
+          }
+        }
+        p {
+          font-size: 30px;
+          @include _600 {
+            font-size: 20px;
+          }
+        }
+      }
+      .social_list {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        width: 50%;
+        a {
+          margin: 0 0 25px;
+          &.facebook {
+            background-image: url("../images/icon_fb_slider.svg");
+            background-repeat: no-repeat;
+            width: 27px;
+            height: 27px;
+            &:hover {
+              background-image: url("../images/icon_fb_slider_hv.svg");
+            }
+          }
+          &.instagram {
+            background-image: url("../images/icon_inst_slider.svg");
+            background-repeat: no-repeat;
+            width: 32px;
+            height: 32px;
+
+            &:hover {
+              background-image: url("../images/icon_inst_slider_hv.svg");
+            }
+          }
+
+          &.youtube {
+            background-image: url("../images/icon_yt_slider.svg");
+            background-repeat: no-repeat;
+            width: 32px;
+            height: 32px;
+
+            &:hover {
+              background-image: url("../images/icon_yt_slider_hv.svg");
+            }
+          }
+          &.pint {
+            background-image: url("../images/icon_pint.svg");
+            background-repeat: no-repeat;
+            width: 27px;
+            height: 27px;
+            &:hover {
+              background-image: url("../images/icon_pint_hv.svg");
+            }
+          }
+          &:hover {
+            transition: all ease 0.45s;
+            opacity: 0.9;
+          }
+        }
+      }
+    }
+    .icon_mouse{
+      display: block;
+      margin: 75px auto 30px;
+      width: 26px;
+      height: 47px;
+      position: relative;
+      z-index: 1;
+    }
+}
+.slick-slider {
+
+    .slick-prev {
+      width: 31px;
+      height: 12px;
+      background: url("../images/arrow_prev.svg") no-repeat!important;
+      position: absolute;
+      border: none;
+      z-index: 1;
+      text-indent: -9999px;
+      right: 133px;
+      bottom: 80px;
+      &:before {
+        content: "";
+        width: 1px;
+        height: 34px;
+        top: -9px;
+        left: 71px;
+        background: #FFFFFF;
+        position: absolute;
+      }
+      &:hover {
+        background: url("../images/arrow_prev_hv.svg") no-repeat!important;
+      }
+    }
+    .slick-next {
+      width: 31px;
+      height: 12px;
+      background: url("../images/arrow_next.svg") no-repeat!important;
+      position: absolute;
+      border: none;
+      z-index: 1;
+      text-indent: -9999px;
+      right: 21px;
+      bottom: 80px;
+      &:hover {
+        background: url("../images/arrow_next_hv.svg") no-repeat!important;
+      }
+  }
+  .slick-dots{
+    position: absolute;
+    bottom: 77px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    .slick-active{
+      button {
+        border: 1px solid #F9F9FA;
+        width: 15px;
+        height: 15px;
+        background: none;
+      }
+    }
+    button{
+      border-radius: 10px;
+      width: 15px;
+      height: 15px;
+      background: #F9F9FA;
+      margin: 0 5px;
+      border: 1px solid #F9F9FA;
+      text-indent: -9999px;
+    }
+  }
+}
+

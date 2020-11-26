@@ -1,0 +1,90 @@
+.header{
+  width: 100%;
+  height: auto;
+  padding: 4px 0;
+  background: $main_bg;
+  @include _1280 {
+    padding: 10px 0;
+  }
+  .header_holder{
+    @include flexBetweenCenter;
+    .logo{
+      @include _1100 {
+        width: 50%;
+        justify-content: center;
+      }
+      @include _768 {
+        width: 40%;
+        justify-content: center;
+      }
+    }
+    .top_lost_icon{
+      @include flexBetweenCenter;
+      li{
+        padding: 0 15px;
+        a{
+          display: inline-block;
+          &.icon_search{
+            background: url("../images/icon_search.svg") no-repeat;
+            width: 19px;
+            height: 19px;
+            &:hover{
+              background: url("../images/icon_search_hv.svg") no-repeat;
+            }
+          }
+          &.icon_libra{
+            background: url("../images/icon_libra.svg") no-repeat;
+            width: 22px;
+            height: 22px;
+            &:hover{
+              background: url("../images/icon_libra_hv.svg") no-repeat;
+            }
+          }
+          &.icon_heart{
+            background: url("../images/icon_heart.svg") no-repeat;
+            width: 22px;
+            height: 20px;
+            position: relative;
+            &:hover{
+              background: url("../images/icon_heart_hv.svg") no-repeat;
+            }
+            span{
+              background: #AA182C;
+              position: absolute;
+              top: -5px;
+              right: -9px;
+              color: $white;
+              font-size: 8px;
+              font-weight: bold;
+              transform: rotate(20deg);
+              padding: 3px;
+            }
+          }
+          &.icon_person{
+            background: url("../images/icon_person.svg") no-repeat;
+            width: 19px;
+            height: 20px;
+            &:hover{
+              background: url("../images/icon_person_hv.svg") no-repeat;
+            }
+          }
+        }
+      }
+      @include _1280 {
+        width: 100%;
+        justify-content: center;
+      }
+      @include _1100 {
+        width: 20%;
+        justify-content: flex-end;
+      }
+      @include _979 {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+    @include _1280 {
+      flex-wrap: wrap;
+    }
+  }
+}
